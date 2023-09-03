@@ -1,0 +1,358 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="front_page.css"> -->
+    <title>finalfrontpage</title>
+</head>
+<body>
+    <div class="menuheader">
+        <div class="bg">
+            <div class="navbar">
+        </div>
+        <div class="content" id="cont">
+            <small>Welcome to Our</small>
+            <h1>Grievance Portal</h1>
+            <a href="registration_login"><button class="button button1">REGISTER </button></a>
+            <br>
+            <a href="registration_new"><button class="button button2"> SIGN-UP </button></a>
+        </div>
+
+        <div class="menusidebar">
+            <div class="user">
+                <img class="user-img" src="profile.png" alt="menulogo">
+                    </div>
+                    <ul>
+                        <li><img src="about us.png" alt="menulogo" ><p onclick="on1()">ABOUT US</p></li>
+                        <li><img src="contact-mail.png" alt="menulogo" ><p onclick="on2()" >CONTACT US</p></li>
+                        <li><img src="faq.png" alt="menulogo" ><p onclick="on3()">HELP/FAQs</p></li>
+                       
+                    </ul>
+            </div>
+            
+        <div id="overlay1" onclick="off1()">
+            <div class= "design" id="text"><p>Welcome to the ammababoi Organization's grievance portal.
+                 Our mission is to provide a safe and accessible platform for individuals to 
+                 submit grievances related to our organization's activities and operations. 
+                 We are committed to transparency, fairness, and accountability in all aspects of our work.
+                 <br>
+                 <br>
+
+                Founded in 2005, the ammababoi Organization has been dedicated to promoting social 
+                justice and human rights in our community. Over the years, we have worked with
+                 a wide range of stakeholders to advance our mission, including government agencies, 
+                 non-profit organizations, and community members.
+                
+                At the ammababoi Organization, we believe in the importance of treating everyone with 
+                dignity and respect. Our core values include transparency, accountability, and fairness, 
+                and we strive to uphold these values in everything we do.
+                <br>
+                Our team of experienced professionals is responsible for managing the grievance portal,
+                 including our director, Jane Smith, and our grievance coordinator, John Doe. Our staff 
+                 is committed to ensuring that all grievances are reviewed promptly and impartially, and 
+                 that users are kept informed throughout the process.
+                
+                Thank you for choosing the ammababoi Organization's grievance portal. We appreciate your
+                 trust and look forward to working with you to promote a more just and equitable 
+                 community </p></div>
+        </div>
+        <div id="overlay2" onclick="off2()">
+            <div class= "design" id="text"><p style=" 
+                margin-top: 30%;">If you have any questions or concerns about the grievance
+                 portal or the grievance process, please do not hesitate to contact us.
+                 <br>
+                  You can reach us by phone at (555) 123-4567 or by email at info@ammababoi.org. We are here to help.</p>
+                </div>
+        </div>
+        <div id="overlay3" onclick="off3()">
+            <div class= "design" id="text"><p style="margin-top: 30%;">Our team of experienced professionals is responsible for managing the grievance portal, including our director, HimaBindu , and our grievance coordinator, Abhijanitha, helper Jishwitha .
+                <br>
+                 Our staff is committed to ensuring that all grievances are reviewed promptly and impartially, and that users are kept informed throughout the process.
+                </p>
+            </div>
+        </div>
+        </div>
+        <script>
+        function on1() {
+            document.getElementById("overlay1").style.display = "block";
+            document.getElementById("cont").style.visibility="hidden";
+          }
+          
+          function off1() {
+            document.getElementById("overlay1").style.display = "none";
+            document.getElementById("cont").style.visibility="visible";
+          }
+
+          function on2() {
+            document.getElementById("overlay2").style.display = "block";
+            document.getElementById("cont").style.visibility="hidden";
+          }
+          
+          function off2() {
+            document.getElementById("overlay2").style.display = "none";
+            document.getElementById("cont").style.visibility="visible";
+          }
+
+          function on3() {
+            document.getElementById("overlay3").style.display = "block";
+            document.getElementById("cont").style.visibility="hidden";
+          }
+          
+          function off3() {
+            document.getElementById("overlay3").style.display = "none";
+            document.getElementById("cont").style.visibility="visible";
+          }
+        </script>
+        <style>
+            body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.bg {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(75,12,120,1) 100%, rgba(60,73,164,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+}
+
+.navbar {
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    margin: 5px;
+    color: #fbfcfd;
+    padding: 15px 30px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+.button1 {
+    padding: 15px 40px;
+}
+
+.button2 {
+    padding: 15px 33px;
+}
+
+.button3 {
+    padding: 15px 24px;
+}
+
+button:hover {
+    color: black;
+    background-color: #fff;
+    font-weight: 600;
+}
+
+.content {
+    color: #fbfcfd;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+h1 {
+    font-size: 80px;
+    margin: 10px 0 30px;
+    line-height: 80px;
+}
+.menuheader {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.menusidebar {
+    width: 50px;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 10px 10px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    transition: width 0.5s;
+
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    overflow: hidden;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.user div {
+    display: none;
+}
+
+.user h2 {
+    display: none;
+    font-size: 10px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.user-img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+
+.star-img {
+    display: none;
+    width: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0 15px;
+}
+
+ul li {
+    top: 0;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+ul li img {
+
+    width: 30px;
+    margin-right: 0;
+}
+
+ul li p {
+    color: #fbfcfd;
+    white-space: nowrap;
+    display: none;
+}
+
+.menusidebar:hover {
+    width: 150px;
+}
+
+.menusidebar:hover .user div {
+    display: block;
+}
+
+.menusidebar:hover .user {
+    width: 60%;
+}
+
+.menusidebar:hover .star-img {
+    display: block;
+}
+
+.menusidebar:hover .user-img {
+    margin: 0;
+    width: 100px;
+    height: 100px;
+}
+
+.menusidebar:hover ul li p {
+    display: block;
+}
+
+.menusidebar:hover ul li img {
+    margin-right: 10px;
+}
+
+.menusidebar:hover ul li img {
+    display: flex-start;
+}
+
+#overlay1 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#overlay2 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#overlay3 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#text {
+    text-align: justify;
+    margin-top: 200px;
+    margin-right: 50px;
+    font-size: 20px;
+    color: white;
+}
+
+.design {
+    margin-left: 300px;
+    width: 60%;
+    text-align: center;
+    padding-left: 10px;
+}
+        </style>
+</body>
+</html>

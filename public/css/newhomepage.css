@@ -1,0 +1,185 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero{
+  width:100%;
+  min-height: 100vh;
+  background: #eceaff;
+  color: #525252;
+  background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
+}
+nav{
+  width:100%;
+  padding: 10px 10%;
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  animation: movedown 1s linear 1;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  /* height: 110px; */
+}
+/* nav a:hover {
+  color: red;
+} */
+.logo{
+  width:90px;
+  border-radius: 50%;
+  margin-top: 15px;
+  margin-left: -30px;
+}
+.userpic{
+  width:40px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 30px;
+}
+nav ul{
+  width:100%;
+  text-align: right;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+
+}
+.submenuwrap{
+  position: absolute;
+  top: 70%;
+  /* right: 10%; */
+  width: 250px;
+  max-height: 0px;
+  overflow:hidden;
+  transition: max-height 0.5s;
+  margin-left: 910px;
+}
+.submenuwrap.open-menu{
+  max-height: 320px;
+  
+}
+.submenu{
+  background: #fff;
+  padding: 20px;
+  margin: 10px;
+  font-size: 13px;
+  
+}
+.userinfo{
+  display:flex;
+  align-items: center;
+  
+}
+.userinfo h3{
+  font-weight: 300;
+}
+.userinfo img{
+  
+  width:60px;
+  border-radius:50%;
+  margin-right:15px;
+}
+.submenu hr{
+  border: 0;
+  height: 1px;
+  width:100%;
+  background: #ccc;
+  margin: 9px 0 10px;
+}
+.submenulink{
+  display:flex;
+  align-items: center;
+  text-decoration: none;
+  color:#525252;
+  margin: 10px 0;
+}
+.submenulink p{
+  width: 100%;
+}
+.submenulink img{
+  width:40px;
+  background: #e5e5e5;
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: 15px;
+}
+.submenulink span{
+  font-size: 22px;
+  transition: transform 0.5s;
+}
+.submenulink:hover span{
+  transform: translateX(5px);
+}
+.submenulink:hover p{
+  font-weight:800;
+}
+footer{
+  height: 30px;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  color: #eceaff;
+  margin-top: 190px;
+}
+
+.card {
+  top:80%;
+  /* animation: zoomin 1s linear 1;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+  animation-delay: 2s; */
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cont{
+  height: 20px;
+  margin-top:280px;
+  color: white;
+}
+
+@keyframes movedown{
+  0%{
+    transform: translateY(-100px);
+    visibility: visible;
+  }
+  100%{
+    transform:translateY(0);
+    visibility: visible;
+  }
+}
+@keyframes zoomin{
+  0%{
+    transform: scale(0.5);
+    visibility: visible;
+  }
+  100%{
+    transform: scale(1);
+    visibility: visible;
+  }
+}
+.contentslider{
+  text-align: center;
+  font-size: 20px;
+  margin: 20px;
+  padding: 20px;
+  display: block;
+  color: white;
+}
+
+/* .cardbig{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */

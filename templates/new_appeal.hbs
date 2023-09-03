@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new appeal</title>
+</head>
+<body>
+    <div class="BOX">
+    <div class="boxes1">
+        <div class="box1 box"> 
+            <div class="BOX1">
+                <div class="boxe1">
+                    <div class="boxbox">User name</div>
+                    <div class="boxbox" style="background-color: #897098; color: black;">bindu</div>
+                </div>
+                <div class="boxe2">
+                    <div class="boxbox"> Location</div>
+                    <div class="boxbox"  style="background-color: #897098; color: black;">nirmal</div>
+                </div>
+                <div class="boxe3">
+                    <div class="boxbox"> Start date</div>
+                    <div class="boxbox"  style="background-color: #897098; color: black;">12/08/2003</div>
+                </div>
+        </div>
+        </div>
+        <div class="box1 box">
+            <div class="BOX1">
+                <div class="boxe1">
+                    <div class="boxbox"> Id number</div>
+                    <div class="boxbox" style="background-color: #897098; color: black;">123455</div>
+                </div>
+                <div class="boxe2">
+                    <div class="boxbox"> Occupation</div>
+                    <div class="boxbox" style="background-color: #897098; color: black;">doctor</div>
+                </div>
+                <div class="boxe3">
+                    <div class="boxbox"> Last date</div>
+                    <div class="boxbox" style="background-color: #897098; color: black;">12</div>
+                </div>
+        </div>
+        </div>
+        <div class="box1 box">
+            <div class="BOX1">
+                <div class="boxe1">
+                    <div class="boxbox"> Reference </div>
+                    <div class="boxbox" style="background-color: #897098; color: black;">123456</div>
+                </div>
+                <div class="boxe2">
+                    <div class="boxbox"> NI number</div>
+                    <div class="boxbox" style="background-color: #897098; color: black;">09865</div>
+                </div>
+                <div class="boxe3">
+                    <div class="boxbox"> Status</div>
+                    <div class="boxbox" style="background-color: #897098; color: black;">current</div>
+                </div>
+                
+        </div>
+        </div>  
+<img src="profile.png">
+    </div>
+    <div class="subcontent">
+        <div class="class1">
+        
+        <form action="new_appeal" method="post">
+            <h1>APPEAL COMPLAINT</h1>
+            <table>
+                <tr >
+                    <td>
+                        <label for="complaint_date">Date of Grievance :</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Date" name="complaint_date" required>
+                    </td>
+                </tr>
+            <tr>
+                    <td>
+                        <label for="incident_date">Date of Incidence :</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="" name="incident_date" required>
+                    </td>
+                </tr>
+            <tr>
+                    <td>
+                        <label>Grievance Level :</label>
+                        <td>
+                        <select name="select level">
+                            <option>Easy</option>
+                            <option>Intermediate</option>
+                            <option>Serious Grievance</option>
+                        </select>
+                        </td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Department :</label></td>
+                        <td>
+                        <select>
+                            <option>Department of Health and Family welfare</option>
+                            <option>Department of Education</option>
+                            <option>Department of Rural areas and Employment</option>
+                            <option>Department of Agriculture</option>
+                            <option>Department of Civil Aviation</option>
+                            <option>Department of Defence</option>
+                        </select>
+                    </td>
+                </tr>
+            <tr>
+                    <td>
+                        <label>Upload Relavant Documents :</label>
+                    </td>
+                    <td>
+                        <input type="file" id="upload-btn">
+            <label for="upload-btn"></label>
+                    </td>
+            </label>
+        </tr>
+    <tr>
+            <td><label for="witness">First Witness Present :</label></td>
+            <td><input type="text" placeholder="" name="witness" required></td>
+        </tr>
+    <tr>
+        <td><label for="witness2">Second Witness Present :</label></td>
+    <td><input type="text" placeholder="" name="witness2" required></td>
+</tr>
+<tr> <td><label for="appeal_result">Appeal Result :</label></td>
+            <td><input type="text" placeholder="" name="appeal_result" required></td>
+            <br>
+        </tr>
+    <tr>
+            <td> <label for="grievance">Write Your Grievance :</label></td>
+            <td>
+            <textarea name="grievance" rows="5" name="grievance"></textarea></td>
+        </tr>
+            <br>
+        <tr>
+            <td> <label for="reason">Reason for Grievance :</label></td>
+            <td> <input type="text" placeholder="" name="reason" required></td>
+            <br>
+        </tr>
+    <tr>
+            <td>  <label for="response_from_company">Response from the Company :</label></td>
+            <td> <input type="text" placeholder="" name="response_from_company" required></td>
+        </tr>
+        </table>
+         <button type="submit" >Submit</button>
+        </form>
+    </div>
+        
+    </div>
+</div>
+<style>
+    body{
+    
+    box-sizing: border-box;
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(75,12,120,1) 100%, rgba(60,73,164,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+.BOX{
+border: solid white 1.3px;
+border-width: 1.5px;
+margin: 50px;
+padding: 30px;
+
+}
+.boxes1,.boxes2,.boxes3{
+display:flex;
+align-items: center;
+justify-content: center;
+}
+.box1{
+background-color: #cbc1d2;
+color:white;
+margin:10px;
+padding:10px;
+width:24%;
+border-radius: 5px;
+border: solid black 1.5px;
+border-width:1.5px;
+justify-content: center;
+}
+.boxe1,.boxe2,.boxe3{
+display:flex;
+}
+.boxbox{
+background-color:#28193d;
+margin:5px;
+padding:10px;
+height:20px;
+width:190px;
+color:white;
+border-radius:3px;
+}
+.subcontent{
+width: 88%;
+height:40%;
+border: solid white 2px;
+margin: 30px;
+padding: 30px;
+}
+form{
+display:flex;
+flex-direction: column;
+color: white;
+font-size: 19px;
+}
+input{
+margin: 10px;
+height: 30px;
+width:300px;
+margin-left: 200px;
+border-radius: 5px;
+}
+label{
+margin-left: 50px;
+}
+select{
+margin: 10px;
+height: 30px;
+width:300px;
+margin-left: 200px;
+border-radius: 5px;
+}
+textarea{
+width:300px;
+margin-left: 200px;
+border-radius: 5px;
+}
+img{
+width:150px;
+height:150px;
+}
+table{
+margin-top: -50px;
+}
+h1{
+text-align: center;
+}
+</style>
+</body>
+</html>

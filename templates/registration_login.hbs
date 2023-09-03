@@ -1,0 +1,276 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" type="text/css" href="registration_login.css"> -->
+    <title>registration login</title>
+</head>
+<body>
+<main>
+    <div class="navbar">
+        <img class="img_logo" src="PaperPlane.png" alt="Logo" width="80px"  style="border-radius: 50%;">
+    <nav>
+        <ul>
+            <li><a href="#" onclick="on1()"><i class="fa fa-fw fa-user"></i>About-Us</a></li>
+            <li><a href="#" onclick="on2()"><i class="fa fa-fw fa-envelope"></i>Contact-Us</a></li>
+        </ul>
+    </nav>
+</div>
+<div id="overlay1" onclick="off1()">
+    <div class= "design" id="text"><p>Welcome to the ammababoi Organization's grievance portal.
+         Our mission is to provide a safe and accessible platform for individuals to 
+         submit grievances related to our organization's activities and operations. 
+         We are committed to transparency, fairness, and accountability in all aspects of our work.
+         <br>
+         <br>
+
+        Founded in 2005, the ammababoi Organization has been dedicated to promoting social 
+        justice and human rights in our community. Over the years, we have worked with
+         a wide range of stakeholders to advance our mission, including government agencies, 
+         non-profit organizations, and community members.
+        
+        At the ammababoi Organization, we believe in the importance of treating everyone with 
+        dignity and respect. Our core values include transparency, accountability, and fairness, 
+        and we strive to uphold these values in everything we do.
+        <br>
+        Our team of experienced professionals is responsible for managing the grievance portal,
+         including our director, Jane Smith, and our grievance coordinator, John Doe. Our staff 
+         is committed to ensuring that all grievances are reviewed promptly and impartially, and 
+         that users are kept informed throughout the process.
+        
+        Thank you for choosing the ammababoi Organization's grievance portal. We appreciate your
+         trust and look forward to working with you to promote a more just and equitable 
+         community </p></div>
+</div>
+<div id="overlay2" onclick="off2()">
+    <div class= "design" id="text"><p style=" 
+        margin-top: 30%;">If you have any questions or concerns about the grievance
+         portal or the grievance process, please do not hesitate to contact us.
+         <br>
+          You can reach us by phone at (555) 123-4567 or by email at info@ammababoi.org. We are here to help.</p>
+        </div>
+</div>
+<div class="main" id="cont">
+<div class="container">
+    <h1>LOGIN TO REGISTER</h1>
+    <form action = "http://localhost:5000/registration_login" method = "POST">
+      <div class="name">
+      <label for="name">Name</label><br>
+      <input placeholder="name" name="name"></div>
+      <div class="number">
+      <label for="phonenumber" >Phone Number</label><br>
+      <input placeholder="number" required name="phonenumber"></div>
+      <div class="email">
+      <label for="email_id" >Email-ID</label><br>
+      <input placeholder="email" required name="email_id"></div>
+        <input type="submit" class="login-btn" value="REGISTER" />
+        
+      <br>
+      <p>No account? </p><a href="registration_new" class="signup" style="text-decoration: none; color:#603F83; font-weight: bold; ">Sign Up</a>
+  </form>
+  </div>
+</div>
+</main>
+    <footer>
+		<p>&copy; 2023 My Website. All rights reserved.</p>
+	</footer>
+    <script src="./login_new.js"></script>
+    <style>
+        nav ul {
+    list-style: none;
+    display: flex;
+}
+.navbar {
+    width: 90%;
+    height: 20%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav li {
+    top: 0;
+    margin: 0 10px;
+}
+nav a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: rgb(244, 238, 229);
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(75,12,120,1) 100%, rgba(60,73,164,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.main{
+    margin-bottom:90px;
+}
+h1{
+    margin-top: 10px;
+    font-family: Tahoma;
+    padding-bottom: 30px;
+    font-size: 25px;
+}
+p{
+    text-align: center;
+}
+form{
+    font-family:Trebuchet MS;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+}
+form .name{
+    margin-bottom:20px;
+    margin-top:20px;
+    margin-right:50px;
+}
+form .number{
+    margin-bottom:20px;
+    margin-top:10px;
+}
+form .email{
+    margin-top:10px;
+}
+label{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input{
+    padding: 5px;
+    padding-right: 70px;
+    border: none;
+    border: 1px solid rgb(137, 137, 137);
+    border-radius:5px;
+    margin: auto;
+    outline: none;
+}
+.login-btn{
+    border: none;
+    background-color: #603F83;
+    color: #C7D3D4;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-left:70px;
+}
+.signup{
+    text-align:center;
+}
+.login-btn:hover{
+    background-color: #C7D3D4;
+    color:#603F83;
+    font-weight: bold;
+}
+
+#overlay1 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#overlay2 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#overlay3 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#text {
+    text-align: justify;
+    margin-top: 200px;
+    margin-right: 50px;
+    font-size: 20px;
+    color: white;
+}
+
+.design {
+    margin-left: 300px;
+    width: 60%;
+    text-align: center;
+    padding-left: 10px;
+}
+</style>
+<script>
+    function on1() {
+        document.getElementById("overlay1").style.display = "block";
+        document.getElementById("cont").style.visibility="hidden";
+      }
+      
+      function off1() {
+        document.getElementById("overlay1").style.display = "none";
+        document.getElementById("cont").style.visibility="visible";
+      }
+
+      function on2() {
+        document.getElementById("overlay2").style.display = "block";
+        document.getElementById("cont").style.visibility="hidden";
+      }
+      
+      function off2() {
+        document.getElementById("overlay2").style.display = "none";
+        document.getElementById("cont").style.visibility="visible";
+      }
+</script>
+</body>
+</html>

@@ -1,0 +1,430 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="homepage_new.css">
+    <link rel="stylesheet" type="text/css" href="slider_new.css">
+    <script src="newhomepage.js"></script>
+    <title>HomePage</title>
+</head>
+<body>
+        <div class="hero">
+            <div class="content">
+            <nav >
+                <img src="PaperPlane.png" class="logo">
+                <ul>
+                    <li ><a href="">Home</a></li>
+                    <li ><a href="">About</a></li>
+                    <li ><a href="">Contact</a></li>
+                    <li ><a href="">Login</a></li>
+                </ul>
+                <img src="profile.png"  class="userpic" onclick="toggleMenu();">
+                <div class="submenuwrap" id="subMenu">
+                    <div class="submenu">
+                        <div class="userinfo" >
+                            <img src="profile.png">
+                            <h3>Bindu Jadhav</h3>
+                        </div>
+                        <hr>
+                        <a href="" class="submenulink">
+                            <img src="profile_homepage.png">
+                            <p>My Profile</p>
+                            <span>></span>
+                        </a>
+                        <a href="" class="submenulink">
+                            <img src="edit_profile.png">
+                            <p>Edit Profile</p>
+                            <span>></span>
+                        </a>
+                        <a href="" class="submenulink">
+                            <img src="settings.png">
+                            <p>Settings</p>
+                            <span>></span>
+                        </a>
+                        <a href="" class="submenulink">
+                            <img src="logout.png">
+                            <p>Sign-Out</p>
+                            <span>></span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+                <div class="card">
+                    <div class="slider">
+                        <div class="slides">
+                          <input type="radio" name="radio-btn" id="radio1">
+                          <input type="radio" name="radio-btn" id="radio2">
+                          <input type="radio" name="radio-btn" id="radio3">
+                          <input type="radio" name="radio-btn" id="radio4">
+                          <div class="slide first" style="background-color: #ffffff;
+                          background-image: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);;;">
+                          <div class="contentslider">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores sed suscipit harum doloremque itaque ad in soluta unde deserunt quis quas explicabo quae ipsam beatae, nulla aut esse minus sint?</p>
+                           <h1>Register</h1>
+                           <h3>a new appeal</h3>
+                        </div>
+                              <a href="registration_new.html" style="text-decoration: none;"><button>Register</button></a>
+                          </div>
+                          <div class="slide" style="background-color: #F4D03F;
+                          background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+                          ">
+                          <div class="contentslider">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores sed suscipit harum doloremque itaque ad in soluta unde deserunt quis quas explicabo quae ipsam beatae, nulla aut esse minus sint?</p>
+                             <h1>Register</h1>
+                             <h3>a new appeal</h3>
+                          </div>
+                              <a href="view_status.html" class="link" style="text-decoration: none;"><button style="margin-left:320px; ">Track appeal</button></a>
+                          </div>
+                          <div class="slide" style=" background-color: #F4D03F;
+                          background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+                          ">
+                          <div class="contentslider">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores sed suscipit harum doloremque itaque ad in soluta unde deserunt quis quas explicabo quae ipsam beatae, nulla aut esse minus sint?</p>
+                             <h1>Register</h1>
+                             <h3>a new appeal</h3>
+                          </div>
+                              <button style="margin-left:330px; ">Edit Profile</button>
+                          </div>
+                    
+                          
+                        </div>
+                        <div class="navigation-manual">
+                          <label for="radio1" class="manual-btn"></label>
+                          <label for="radio2" class="manual-btn"></label>
+                          <label for="radio3" class="manual-btn"></label>
+                          
+                         </div>
+                      </div>
+                  </div>
+                   <footer>
+                        <p>&copy; 2023 My Website. All rights reserved.</p>
+                    </footer> 
+                  </div>
+                  <style>
+                    *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.hero{
+  display:inline-block;
+  width:100%;
+  min-height: 100vh;
+  background: #eceaff;
+  color: #525252;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(75,12,120,1) 100%, rgba(60,73,164,1) 100%, rgba(0,212,255,1) 100%);
+}
+nav{
+  margin-top: 50px;
+  width:100%;
+  padding: 10px 10%;
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  animation: movedown 1s linear 1;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+.logo{
+  width:90px;
+  border-radius: 50%;
+  margin-top: 15px;
+  margin-left: -30px;
+}
+.userpic{
+  width:40px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 30px;
+}
+nav ul{
+  width:100%;
+  text-align: right;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+
+}
+.submenuwrap{
+  position: absolute;
+  top: 70%;
+  width: 250px;
+  max-height: 0px;
+  overflow:hidden;
+  transition: max-height 0.5s;
+  margin-left: 910px;
+}
+.submenuwrap.open-menu{
+  max-height: 320px;
+  
+}
+.submenu{
+  background: #fff;
+  padding: 20px;
+  margin: 10px;
+  font-size: 13px;
+  
+}
+.userinfo{
+  display:flex;
+  align-items: center;
+  
+}
+.userinfo h3{
+  font-weight: 300;
+}
+.userinfo img{
+  
+  width:60px;
+  border-radius:50%;
+  margin-right:15px;
+}
+.submenu hr{
+  border: 0;
+  height: 1px;
+  width:100%;
+  background: #ccc;
+  margin: 9px 0 10px;
+}
+.submenulink{
+  display:flex;
+  align-items: center;
+  text-decoration: none;
+  color:#525252;
+  margin: 10px 0;
+}
+.submenulink p{
+  width: 100%;
+}
+.submenulink img{
+  width:40px;
+  background: #e5e5e5;
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: 15px;
+}
+.submenulink span{
+  font-size: 22px;
+  transition: transform 0.5s;
+}
+.submenulink:hover span{
+  transform: translateX(5px);
+}
+.submenulink:hover p{
+  font-weight:800;
+}
+footer{
+  height: 30px;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  color: #eceaff;
+  margin-top: 150px;
+}
+
+.card {
+  top:200%;
+  margin-top: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cont{
+  height: 20px;
+  margin-top:280px;
+  color: white;
+}
+
+@keyframes movedown{
+  0%{
+    transform: translateY(-100px);
+    visibility: visible;
+  }
+  100%{
+    transform:translateY(0);
+    visibility: visible;
+  }
+}
+@keyframes zoomin{
+  0%{
+    transform: scale(0.5);
+    visibility: visible;
+  }
+  100%{
+    transform: scale(1);
+    visibility: visible;
+  }
+}
+.contentslider{
+  text-align: center;
+  font-size: 20px;
+  margin: 20px;
+  padding: 20px;
+  display: block;
+  color: white;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: navy;
+  background-color: #4d4855;
+  background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+
+}
+
+.slider {
+  width: 800px;
+  height: 400px;
+  border-radius: 10px;
+  border: solid black 1.5px;
+  overflow: hidden;
+
+}
+
+.slides {
+  width: 500%;
+  height: 400px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img {
+  width: 600px;
+  height: 400px;
+}
+
+
+
+.navigation-manual {
+  position: absolute;
+  width: 600px;
+  margin-top: -40px;
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background: #40D3DC;
+}
+
+#radio1:checked~.first {
+  margin-left: 0;
+}
+
+#radio2:checked~.first {
+  margin-left: -20%;
+}
+
+#radio3:checked~.first {
+  margin-left: -40%;
+}
+
+#radio4:checked~.first {
+  margin-left: -60%;
+}
+
+
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 600px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div {
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+  background: #40D3DC;
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+  background: #40D3DC;
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+  background: #40D3DC;
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
+  background: #40D3DC;
+}
+
+button {
+  color: white;
+  padding: 10px 25px;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  /* margin: 60px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  margin-left: 43%;
+  font-size: large;
+  background-color: #060047;
+  border: solid #060047 1.5px;
+}
+button:hover{
+  font-weight: bold;
+}
+                  </style>
+            <script>
+                let subMenu = document.getElementById("subMenu");
+                function toggleMenu() {
+                subMenu.classList.toggle("open-menu");
+                }
+            </script>
+</body>
+</html>

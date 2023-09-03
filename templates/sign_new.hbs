@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="sign_new.css">
+    <title>SIGN-UP</title>
+</head>
+<body background="">
+    <main>
+    <div class="navbar">
+        <img class="img_logo" src="PaperPlane.png" alt="Logo" width="80px"  style="border-radius: 50%;">
+    <nav>
+        <ul>
+            <li><a href="#"><i class="fa fa-fw fa-user"></i>About-Us</a></li>
+            <li><a href="#"><i class="fa fa-fw fa-envelope"></i>Contact Us</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="main">
+    <div class="signup-form">
+        <h2>SIGN-UP</h2>
+        <form  action = "http://localhost:5000/sign_new" method = "POST">
+        <div class="inp">
+            <label for="Username" id="Username">Username <br></label>
+            <input type="text" placeholder="username" name = "Username" required>
+            </div>
+        <div class="inp">
+            <label for="Email_id" id="Email_id">Email_id <br></label>
+                <input type="Email_id" id="Email_id" placeholder="email-id" name = "Email_id" required>
+            </div>
+      <div class="inp">
+        <label for="Password" id="Password">Password <br></label>
+        <input type="Password" placeholder="password" name="Password" required>
+        </div>
+        <div class="inp">
+            <label for="Confirm_password" id="Confirm_password">Confirm_password <br></label>
+                <input type="Password" id="Confirm_password" name="Confirm_password" required>
+            </div> 
+           
+        <button type="submit" >SIGN-UP</button>
+
+        </form> 
+          {{!-- <a href="login" class="link"><button type="submit" >SIGN-UP</button></a> --}}
+       
+
+    </a>
+    </div>
+</div>
+</main>
+    <footer>
+		<p>&copy; 2023 My Website. All rights reserved.</p>
+	</footer>
+    <style>
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+    
+    .navbar {
+        width: 90%;
+        height: 20%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+    }
+    
+    nav li {
+        top: 0;
+        margin: 0 10px;
+    }
+    
+    nav a {
+        font-size: 20px;
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    nav a:hover {
+        color: red;
+    }
+    
+    footer {
+        background-color: #eee;
+        padding: 10px;
+        text-align: center;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    main{
+        display: grid;
+    place-items: center;
+    height: 100vh;
+    background-image: url(176Z_mar111.jpeg);
+    width: 100%;
+    /* height: 100%; */
+    /* background: rgb(2,0,36); */
+        /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(12,43,120,1) 100%, rgba(60,73,164,1) 100%, rgba(0,212,255,1) 100%); */
+    }
+    .signup-form{
+       background-color: white;
+       border-radius: 20px;
+       /* box-shadow:0px 0px 10px #ccc; */
+       padding:20px;
+       width: 435px;
+       height: 550px;
+       margin-left: 923px;
+       margin-top: -56px;
+      
+    }
+    h2{
+       font-family: Tahoma;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size:30px;
+    }
+    form{
+    display: flex;
+    flex-direction: column;
+    }
+    .signup-form form .inp{
+        text-align: left;
+        margin-left:25px;
+    }
+    label{
+    font-size: 20px;
+    /* font-weight: bold; */
+    color:black;
+    font-family:Trebuchet MS;
+    }
+    
+    input{
+    padding: 5px;
+    border: none;
+    border: 1px solid rgb(137, 137, 137);
+    border-radius:5px;
+    margin-top: 10px;
+    outline: none;
+    padding-right: 70px;
+    }
+    
+    .inp{
+       text-align: center;
+       padding: 20px;
+    }
+    
+    
+    .fa{
+       padding:16px;
+       color:black;
+       font-weight:bold;
+    }
+    button{
+       border: none;
+    background-color: #603F83;
+    color: #C7D3D4;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 120px; 
+      
+    }
+    button:hover{
+       background-color: #C7D3D4;
+       color:#603F83;
+       font-weight: bold;
+    }
+    </style>
+    <script>
+
+
+//         function togglePassword(){
+//   const btn = document.getElementById("btn");
+//   var password = document.getElementById("Password");
+
+//   if(password.type === "Password"){
+//     password.type = "text";
+//     btn.classList.remove("fa-eye-slash");
+//     btn.classList.add("fa-eye");
+//   }
+//   else{
+//     password.type = "Password";
+//     btn.classList.remove("fa-eye");
+//     btn.classList.add("fa-eye-slash");
+//   }
+// }
+// const form = document.querySelector("form")
+
+// form.addEventListener("submit",(e)=>{
+//     e.preventDefault()
+
+//     const Username = form.Username.value
+//     const Email_id = form.Email-id.value
+//     const Password = form.Password.value
+//     const Confirm_password=form.Confirm_password.value
+
+//     const authenticated = authentication(Username,Email_id, Password, Confirm_password)
+
+//     if(authenticated){
+//         window.location.href = "home.html"
+//     }else{
+//         alert("wrong")
+//     }
+
+
+
+
+// })
+
+// // function for checking username and password
+
+// function authentication(Username,Email_id,Password, Confirm_password){
+//     if((Username === "Ayushi" || Username ==="Arshiya" || Username ==="Komal"||Usename==="Teja")  && (Email_id==="iit2021224@iiita.ac.in"|| Email_id=== "iit2021270@iiita.ac.in" ||Email_id==="iit202127@iiita.ac.in" || Email_id==="iit2021235@iiita.ac.in") (Password === "IIT2021224" || Password === "IIT2021270" || Password === "IIT2021227" ||Password==="IIT2021235") (Confirm_password === "IIT2021224" ||  Confirm_password=== "IIT2021270" || Confirm_password === "IIT2021227" ||Confirm_password==="IIT2021235")){
+//         return true
+//     }else{
+//         return false
+//     }
+// }
+ 
+
+    </script>
+</body>
+</html>

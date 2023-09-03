@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/login_new.css">
+    <title>NewHeader</title>
+</head>
+<body>
+<main>
+    <div class="navbar">
+        <img class="img_logo" src="PaperPlane.png" alt="Logo" width="80px"  style="border-radius: 50%;">
+    <nav>
+        <ul>
+            <li><a href="#"><i class="fa fa-fw fa-user"></i>About-Us</a></li>
+            <li><a href="#"><i class="fa fa-fw fa-envelope"></i>Contact Us</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="main">
+<div class="container">
+    <h1>LOGIN</h1>
+    <form action = "/login" method = "post">
+      <div class="username">
+      <label for="Username">Username</label>
+      <input type="text" placeholder="username" name = "Username" required></div>
+      <div class="password">
+      <label for="Password">Password</label>
+      <input type="Password" placeholder="Password" name="Password" required></div>
+      <input type="submit" class="login-btn" value="LOGIN" /> 
+
+  </form>
+      {{!-- <input type="submit" class="login-btn" value="LOGIN" />  --}}
+      <BR>
+          No account? <a href="sign_new" class="link" style="text-decoration: none; color:#603F83; font-weight: bold; ">Sign Up</a>
+  </div>
+</div>
+</main>
+    <footer>
+		<p>&copy; 2023 My Website. All rights reserved.</p>
+	</footer>
+    <script src="./login_new.js"></script>
+</body>
+</html>

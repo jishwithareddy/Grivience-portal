@@ -1,0 +1,373 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" type="text/css" href="registration_new.css"> -->
+    <link href='https://fonts.googleapis.com/' rel='stylesheet'>
+    <title>registration signup</title>
+</head>
+<body>
+    <div class="headerbg">
+        <div class="bg2">
+        <div class="navbar">
+			<img class="img_logo" src="PaperPlane.png" alt="Logo" width="80px">
+		<nav>
+			<ul>
+				<!-- <li><a href="#"><i class="fa fa-fw fa-home"></i>Home</a></li> -->
+				<li><a href="#" onclick="on1()"><i class="fa fa-fw fa-user"></i>About-Us</a></li>
+				<li><a href="#" onclick="on2()"><i class="fa fa-fw fa-envelope"></i>Contact-Us</a></li>
+			</ul>
+		</nav>
+    </div>
+    <div id="overlay1" onclick="off1()">
+      <div class= "design" id="text"><p>Welcome to the ammababoi Organization's grievance portal.
+           Our mission is to provide a safe and accessible platform for individuals to 
+           submit grievances related to our organization's activities and operations. 
+           We are committed to transparency, fairness, and accountability in all aspects of our work.
+           <br>
+           <br>
+  
+          Founded in 2005, the ammababoi Organization has been dedicated to promoting social 
+          justice and human rights in our community. Over the years, we have worked with
+           a wide range of stakeholders to advance our mission, including government agencies, 
+           non-profit organizations, and community members.
+          
+          At the ammababoi Organization, we believe in the importance of treating everyone with 
+          dignity and respect. Our core values include transparency, accountability, and fairness, 
+          and we strive to uphold these values in everything we do.
+          <br>
+          Our team of experienced professionals is responsible for managing the grievance portal,
+           including our director, Jane Smith, and our grievance coordinator, John Doe. Our staff 
+           is committed to ensuring that all grievances are reviewed promptly and impartially, and 
+           that users are kept informed throughout the process.
+          
+          Thank you for choosing the ammababoi Organization's grievance portal. We appreciate your
+           trust and look forward to working with you to promote a more just and equitable 
+           community </p></div>
+  </div>
+  <div id="overlay2" onclick="off2()">
+      <div class= "design" id="text"><p style=" 
+          margin-top: 30%;">If you have any questions or concerns about the grievance
+           portal or the grievance process, please do not hesitate to contact us.
+           <br>
+            You can reach us by phone at (555) 123-4567 or by email at info@ammababoi.org. We are here to help.</p>
+          </div>
+  </div>
+    <div class="bigcontainer" id="cont">
+    <div class="heading">
+      <h3>SIGN-UP TO REGISTER</h3>
+    </div>
+    <form action = "http://localhost:5000/registration_new" method = "POST">
+      <div class="userdetails">
+        <div class="flexbox">
+          <div class="inputbox">
+            <label for="name">Name</label><br />
+            <input type="text" placeholder="name" name="name" required>
+          </div>
+          
+            <!-- <label>Gender</label> -->
+            <div class="genderclass">
+                <label><input type="radio">male</label>
+                <label><input type="radio">female</label>
+              <!-- <div class="inputbox">
+                <label><input type="radio" />prefer not to say</label>
+              </div> -->
+            </div>
+          
+        </div>
+        <div class="flexbox">
+          <div class="inputbox">
+            <label for="name">District</label><br />
+            <input type="text" placeholder="district" name="district" required>
+          </div>
+          <div class="inputbox">
+            <label for="name">State</label><br />
+            <select>
+              <option>telangana</option>
+              <option>madhyapradesh</option>
+              <option>goa</option>
+              <option>maharasthra</option>
+              <option>kerala</option>
+            </select>
+          </div>
+        </div>
+        <div class="flexbox">
+          <div class="inputboxcountry">
+            <label for="name">Country</label><br />
+            <select><div class="country">
+              <option>pakisthan</option>
+              <option>china</option>
+              <option>india</option>
+              <option>america</option>
+              <option>australia</option></div>
+            </select>
+          </div>
+          <div class="inputbox">
+            <label for="name">Pincode</label><br />
+            <input type="text" placeholder="Pincode" name="pincode" required>
+          </div>
+        </div>
+        <div class="flexbox">
+          <div class="inputbox">
+            <label for="name">Address</label><br />
+            <input type="text" placeholder="address" name="address" required>
+          </div>
+          <div class="inputbox">
+            <label for="name">Email-ID</label><br />
+            <input type="text" placeholder="email" name="email_id">
+          </div>
+        </div>
+        <div class="flexbox">
+          <div class="inputbox">
+            <label for="name">Phone Number</label><br />
+            <input type="text" placeholder="+91 |" name="phonenumber" required>
+          </div>
+          <div class="inputbox">
+            <label for="name">Secondary Phone Number</label><br />
+            <input type="text" placeholder="+91 |"  name="second_phonenumber" required>
+          </div>
+        </div>
+      </div>
+   
+      <div class="flexbox">
+        
+      <div class="button">
+        <a href="homepage_new.html" class="link"><button>BACK-TO-HOMEPAGE</button></a>
+      </div>
+      <div class="button">
+        <button class="signup">REFRESH</button>
+      </div>
+      <div class="button">
+        <a href="dashboard_new.html" class="link"><button>SUBMIT</button></a>
+      </div>
+  </div>
+</form> 
+  </div>
+</div>
+    </div>
+    <footer>
+		<p>&copy; 2023 My Website. All rights reserved.</p>
+	</footer>
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.bg2 {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(75,12,120,1) 100%, rgba(60,73,164,1) 100%, rgba(0,212,255,1) 100%);
+    background-size: cover;
+}
+.img_logo{
+    border-radius: 50%;
+    width:100px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+.navbar {
+    width: 90%;
+    height: 20%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav li {
+    top: 0;
+    margin: 0 10px;
+}
+nav a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+footer {
+    background-color: #eee;
+    padding: 10px;
+    text-align: center;
+}
+body{
+    height:100vh;
+}
+.bigcontainer{
+    width:60%;
+    height:75%;
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+    backdrop-filter: blur(2px);
+    background-color: rgba(255, 255, 255, 0.2);
+    padding:30px;
+    border-radius:20px;
+    margin-left:300px;
+    font-family:Trebuchet MS;
+    color:white;
+}
+.heading{
+    text-align: center;
+    font-family: Tahoma;
+    font-size: large;
+    margin:auto;
+    color:white;
+}
+.genderclass{
+    display:flex;
+    padding-right: 170px;
+    text-align: left;
+}
+.genderclass label{
+    font-size: larger;
+    margin:auto;
+    padding:10px;
+}
+.userdetails .inputbox input{
+    font-size: large;
+    height:35px;
+    padding:15px 10px;
+    padding-right:90px;
+    border-radius: 5px;
+    border-color:black;
+    border-style: solid;
+}
+.userdetails .inputboxcountry select{
+    font-size: large;
+    height:35px;
+    padding:5px 10px;
+    padding-right: 210px;
+    border-radius: 5px;
+    color:grey;
+    border-color: black;
+    border-style: solid;
+}
+.userdetails .inputbox select{
+    font-size: large;
+    height:35px;
+    padding:5px 10px;
+    border-radius: 5px;
+    padding-right:160px;
+    color:grey;
+    border-color: black;
+    border-style: solid;
+}
+.userdetails .inputbox label{
+    font-size: larger;
+}
+.userdetails .inputboxcountry label{
+    font-size: larger;
+}
+.flexbox{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+.flexbox .button{
+    margin:auto;
+    padding:10px;
+}
+.flexbox .button button{
+    padding:10px 20px;
+    border-radius: 5px;
+    font-size:15px;
+    background-color:rgb(237, 236, 255);
+    border-style: solid;
+    border-color: rgb(237, 236, 255);
+    color:rgba(2,0,36,1);
+    font-weight: bold;
+    /* font-weight: bold; */
+}
+.flexbox .button button:hover{
+    background-color: rgba(2,0,36,1);
+    color:rgb(237, 236, 255);
+    border-color: rgba(2,0,36,1);
+    font-weight: bolder;
+}
+.heading{
+    margin-bottom: 20px;
+}
+
+#overlay1 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#overlay2 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#overlay3 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#text {
+    text-align: justify;
+    margin-top: 200px;
+    margin-right: 50px;
+    font-size: 20px;
+    color: white;
+}
+
+.design {
+    margin-left: 300px;
+    width: 60%;
+    text-align: center;
+    padding-left: 10px;
+}
+</style>
+<script>
+  function on1() {
+        document.getElementById("overlay1").style.display = "block";
+        document.getElementById("cont").style.visibility="hidden";
+      }
+      
+      function off1() {
+        document.getElementById("overlay1").style.display = "none";
+        document.getElementById("cont").style.visibility="visible";
+      }
+
+      function on2() {
+        document.getElementById("overlay2").style.display = "block";
+        document.getElementById("cont").style.visibility="hidden";
+      }
+      
+      function off2() {
+        document.getElementById("overlay2").style.display = "none";
+        document.getElementById("cont").style.visibility="visible";
+      }
+</script>
+</body>
+</html>
